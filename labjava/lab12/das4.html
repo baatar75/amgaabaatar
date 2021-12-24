@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Санамсаргүй тоо</title>
+</head>
+<body>
+a) 1 ≤n ≤2			: <span id = "result1"></span><br>
+b) 1 ≤n ≤100		: <span id = "result2"></span><br>
+c) 0 ≤n ≤9			: <span id = "result3"></span><br>
+d) 1000 ≤n ≤1112	: <span id = "result4"></span><br>
+e) –1 ≤n ≤1			: <span id = "result5"></span><br>
+f) –3 ≤n ≤11		: <span id = "result6"></span><br>
+<script>
+document.getElementById("result1").innerHTML=Math.floor( 1 + Math.random() * 1 );
+document.getElementById("result2").innerHTML=Math.floor( 1 + Math.random() * 100 );
+document.getElementById("result3").innerHTML=Math.floor( 0 + Math.random() * 9 );
+document.getElementById("result4").innerHTML=Math.floor( 1000 + Math.random() * 112 );
+document.getElementById("result5").innerHTML=Math.floor( -1 + Math.random() * 2 );
+document.getElementById("result6").innerHTML=Math.floor( -3 + Math.random() * 14 );
+</script>
+</body>
+</html>

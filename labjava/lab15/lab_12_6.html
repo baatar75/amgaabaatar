@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лаборатор 12: Дасгал 6</title>
+	<style>
+		input
+		{
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Inset Item
+		<br>
+		Name:<input type="text" id="Item" placeholder="Item"/>
+		<br>
+		Price:<input type="text" id="Price" placeholder="Price"/>
+		<br>
+		<br>
+		<input type="button" value="Insert" onclick="insert()"/>
+	</div>
+	<br>
+	<br>
+	<table id="table" border="1">
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<th>total</th>
+			<th id="sum">0</th>
+		</tr>
+	</table>
+	<script>
+		function insert()
+		{
+			var v1=document.getElementById("Item").value;
+			var v2=document.getElementById("Price").value;
+			var table=document.getElementById("table");
+			var row=table.insertRow(1);
+			var cell1=row.insertCell(0);
+			var cell2=row.insertCell(1);
+			cell1.innerHTML=v1;
+			cell2.innerHTML=v2;
+			var sum=document.getElementById("sum").innerHTML;
+			var s=parseInt(sum);
+			var s1=parseInt(v2);
+			s=s+s1;
+			document.getElementById("sum").innerHTML=s;
+		}
+	</script>
+</body>
+</html>

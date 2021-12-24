@@ -1,0 +1,40 @@
+<html>
+<head><title>Calculate Parking Hours</title>
+
+<script type="text/javascript">
+
+function calcCharge()
+{
+	var hour=parseInt(document.fee.hour.value);
+	var tot;
+	if (hour<=3)
+		tot=5000;
+	else if (hour>3 && hour<=21)
+		tot=5000+1000*(hour-3);
+	else if (hour>21 && hour<=24)
+		tot=23000;
+	else 
+		tot=0;
+		
+	
+	
+	if (tot!=0)
+		document.write("<p>The total charge is :"+tot+"₮</p>");
+	else 
+		document.write("<p>Буруу утга оруулсан</p>")
+		
+}
+
+function calcTotal()
+{
+	var totCha;
+	totCha=parseInt(totCha);
+	totCha+=document.tot.value;
+	alert("Total charge all customers"+totCha);
+}
+</script>
+</head>
+<body onload="calcTotal()">
+<form name="fee" method="post">
+Hour : <input name="hour" type="text"><br>
+<input type="submit" name="submit" value="Total Charge" onclick="calcCharge()">

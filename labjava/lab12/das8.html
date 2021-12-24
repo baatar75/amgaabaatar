@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Цифрүүд</title>
+	<script type="text/javascript">
+	var n, m;
+	var k;
+	var uld;
+	var uld=new Array();
+	var i=0;
+	n=window.prompt("Утгаа оруул: ");
+	m=parseInt(n);
+	var l;
+	l=m;
+	while(l>0)
+	{
+		uld[i]=l%10;
+		l=l/10;
+		i++;
+	}
+	for (k=i ; i >= 0 ; i++) 
+	{
+		document.writeln(" "+uld[k]+" ");
+	}
+	</script>
+</head>
+<body>
+</body>
+</html> 

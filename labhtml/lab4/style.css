@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&family=Saira+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+table 
+{
+	width: 50%;
+	margin: 0 auto;
+	border-spacing: 10px;
+}
+td
+{
+	padding: 10px;
+}
+#header
+{
+	background-color: orange;
+	color: white;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-family: 'Big Shoulders Display', cursive;
+	font-family: 'Saira Condensed', sans-serif;
+}
+.bigtext
+{
+	font-size: 40px;
+}
+.slogan
+{
+	font-size: 15px;
+}
+.nav
+{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.navtext
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#firstsidebar
+{
+	background-color: #1490F1;
+	word-break: keep-all;
+	padding: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 25%;
+	margin: 5%;
+}
+.main
+{
+	background-color: #F13F14;
+	font-family: 'Trebuchet MS', sans-serif;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.subtext
+{
+	font-family: 'Lobster', cursive;
+}
+#secondsidebar
+{
+	background-color: #14F1CF;
+	color: white;
+	padding: 15px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.footer
+{
+	background-color: grey;
+	text-align: right;
+}
+.footertext
+{
+	font-family: italic;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Цэг хоорондын зай</title>
+	<style>
+		body 
+		{
+			margin: 35px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	function distance()
+	{
+		a=document.getElementById("x1").value;
+		b=document.getElementById("y1").value;
+		c=document.getElementById("x2").value;
+		d=document.getElementById("y2").value;
+		A=parseInt(a);
+		B=parseInt(b);
+		C=parseInt(c);
+		D=parseInt(d);
+		disX=A-C;
+		disY=B-D;
+		zai=disX*disX+disY*disY;
+		document.getElementById("result").innerHTML=Math.sqrt(zai);
+	}
+	</script>
+	<form>
+		X1 : <input type="text" id="x1" /><br>
+		Y1 : <input type="text" id="y1" /><br>
+		X2 : <input type="text" id="x2" /><br>
+		Y2 : <input type="text" id="y2" /><br>
+		<input type="button" onClick="distance()" value="solve" />
+	</form>
+	<p>The result is : <br>
+	<span id = "result"></span>
+</p>
+</body>
+</html>

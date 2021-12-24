@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лаборатор 12: Дасгал 3</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="mur" placeholder="Мөрийн тоо"/>
+		<input type="text" id="bagana" placeholder="Баганын тоо"/>
+		<input type="button" value="Үүсгэх" onclick="create()"/>
+	</div>
+	<script>
+		function create()
+		{
+			var n;
+			n=1;
+			var mur=document.getElementById("mur").value
+			var bagana=document.getElementById("bagana").value
+			var body = document.getElementsByTagName("body")[0];
+			var table=document.createElement("table");
+			var tablebody = document.createElement("tbody");
+			for(var i=0; i<mur; i++)
+			{
+				var row=document.createElement("tr");
+				for(var j=0; j<bagana; j++)
+				{
+					var cell=document.createElement("td")
+					var cellText=document.createTextNode(n);
+					n++;
+					cell.appendChild(cellText);
+					row.appendChild(cell);
+					cell.setAttribute("width", "100px");
+					cell.setAttribute("heigth", "100px");
+				}
+				tablebody.appendChild(row);
+			}
+			table.appendChild(tablebody);
+			body.appendChild(table);
+			table.setAttribute("border", " 2");
+			table.setAttribute("margin", "0 auto")
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.flexbox
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row-wrap;
+	
+}
+.flexbox div
+{
+	width: 150px;
+	text-align: center;
+	padding: 15px 10px;
+	font-family: 'Anton', sans-serif;
+}
+.background-color
+{
+	color: white;
+	background-color: grey;
+	margin: 20px;
+	transition: transform 1s;
+}
+.flexbox > div:nth-child(1)
+{
+	opacity: 0.6;
+	transition: 0.3s;
+}
+.flexbox > div:nth-child(2)
+{
+	transition: 0.5s;
+}
+.flexbox div:hover
+{
+	color: white;
+}
+.flexbox > div:nth-child(1):hover
+{
+	opacity: 1;
+}
+.flexbox > div:nth-child(2):hover
+{
+	color: black;
+}
+.flexbox > div:nth-child(3):hover
+{
+	transform: scale(1.5);
+}
+.flexbox > div:nth-child(4):hover
+{
+	transform: scale(0.7);
+}
+.flexbox > div:nth-child(5):hover
+{
+	transform: rotate(-45deg) ;
+}
+.flexbox > div > div:nth-child(2):hover
+{
+	width: 150px;
+}
+.button_slide {
+  color: black;
+  border: 2px solid grey;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 grey;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  margin: 20px;
+
+}
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 grey;
+}

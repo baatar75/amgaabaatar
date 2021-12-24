@@ -1,0 +1,263 @@
+.dugaarlalt
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.text1
+{
+	text-shadow: 2px 5px 5px deepskyblue;
+	font-size: 200%;
+	margin: 30px;
+}
+.flex1
+{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+}
+#box1
+{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	background-color: red;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 300%;
+	text-align: center;
+}
+#box2
+{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	background-color: yellow;
+	border: 3px solid black;
+	border-radius: 50px;
+	font-weight: bold;
+	font-size: 300%;
+	text-align: center;
+}
+#box3
+{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	background-color: green;
+	border: 3px solid black;
+	border-radius: 100px;
+	font-weight: bold;
+	font-size: 300%;
+	text-align: center;
+}
+#box4
+{
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	background-color: red;
+	box-shadow: 15px 15px 20px dimgrey;
+}
+#box5
+{
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	background-color: yellow;
+	box-shadow: -15px -15px 30px dimgrey;
+}
+#box6
+{
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	background-color: green;
+	box-shadow: 15px 15px 10px dimgrey;
+}
+#box7
+{
+	width: 500px;
+	height: 500px;
+	margin: 30px;
+	background: linear-gradient(45deg, red 10%, orange 25%, yellow 40%, green 55%, blue 70%, indigo 85%, violet 100%);
+}
+#box8
+{
+	width: 500px;
+	height: 500px;
+	margin: 30px;
+	background: radial-gradient(circle at bottom left, red, yellow, green);
+}
+.size
+{
+	width: 500px;
+	height: 500px;
+	background-color: lightsteelblue;
+	margin: 30px;
+}
+#box9
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	animation: moving 5s infinite linear;
+}
+@keyframes moving
+{
+	0% {left:400px; top: 0px;}
+	25% {left: 400px; top: 400px;}
+	50% {left: 0px; top: 400px;}
+	75% {left: 0px; top: 0px;}
+	100% {left: 400px; top: 0px;}
+}
+#box10
+{
+	margin-left: 75px;
+	background: lightgreen;
+	height: 100px;
+	width: 200px;
+	padding: 25px 0;
+	text-align: center;
+	font-size: 250%;
+	border: 3px solid darkgreen;
+	border-radius: 15px;
+	transform: skew(-30deg, 30deg);
+	animation: skew 3s infinite linear;
+}
+@keyframes skew
+{
+	from {transform: skew(0deg, 0deg);}
+	25% {transform: skew(0deg, 30deg);}
+	50% {transform: skew(-30deg, 30deg);}
+	75% {transform: skew(-30deg, 0deg);}
+	to {transform: skew(0deg, 0deg);}
+}
+#cover
+{
+	position: relative;
+	margin: 0 auto;
+}
+#cover img
+{
+	position: absolute;
+	left: 0;
+	transition: opacity 2s linear;
+}
+
+#cover img:nth-child(1):hover{
+	transition-delay: 6s;
+	opacity: 0;
+}
+#cover img:nth-child(2):hover{
+	transition-delay: 4s;
+	opacity: 0;
+}
+#cover img:nth-child(3):hover{
+	transition-delay: 2s;
+	opacity: 0;
+}
+#cover img:nth-child(4):hover{
+	transition-delay: 0s;
+	opacity: 0;
+}
+.bagana
+{
+	column-count: 2;
+	column-gap: 20px;
+	column-rule: 5px outset blue;
+}
+#hemjee
+{
+	width: 550px;
+	height: 450px;
+	background-color: yellow;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+#box11
+{
+	width: 150px;
+	height: 100px;
+	background-color: blue;
+	margin: 5px;
+}
+#box12
+{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	margin: 5px;
+}
+#box13
+{
+	width: 150px;
+	height: 125px;
+	background-color: purple;
+	margin: 5px;
+}
+#box14
+{
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	margin: 5px;
+}
+#box15
+{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	margin: 5px;
+}
+#box16
+{
+	width: 150px;
+	height: 150px;
+	background-color: purple;
+	margin: 5px;
+}
+#box17
+{
+	width: 550px;
+	height: 30px;
+}
+#module
+{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+}
+#module img
+{
+	width: 200px;
+	height: 150px;
+	transition: transform 1s ease-out;
+	margin: 30px;
+}
+#module img:hover{
+	transform: scale(1.2);
+}
+@media handheld and (max-width: 480px),
+screen and (max-device-width: 480px),
+screen and (max-width: 480px){
+	div.media{
+		column-count: 1;
+	}
+}
+@media only screen and (min-width: 480px){
+	div.media{
+		column-count: 4;
+		column-gap: 30px;
+		column-rule: 3px outset blue;
+	}
+}

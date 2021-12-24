@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Тэгш эсэхийг шалгах</title>
+	<script>
+	var too;
+	var number;
+	var too=new Array();
+	var i=1, k;
+	number=window.prompt("Тоог оруул, 0.5 -г оруулбал дуусна.: ", "0");
+	too[0]=number;
+	while(number!=0.5)
+	{
+		number=window.prompt("Тоог оруул, 0.5 -г оруулбал дуусна.: ", "0");
+		too[i]=number;
+		i++;
+	}
+	for(k=0; k<i-1; k++)
+	{
+		uld=too[k]%2;
+		if(uld)
+			document.writeln("<p>"+too[k]+" false</p>");
+		else
+			document.writeln("<p>"+too[k]+" false</p>");
+	}
+	</script>
+</head>
+<body>
+</body>
+</html>

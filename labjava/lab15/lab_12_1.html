@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лаборатор 12: Дасгал 1</title>
+	<style>
+		.text 
+		{
+			text-align: center;
+			color: black;
+			margin: 0 auto;
+		}
+		p
+		{
+			width: 60px;
+			height: 60px;
+			font-size: 30px;
+		}
+		div
+		{
+			text-align: center;
+		}
+		input
+		{
+			height: 20px;
+			width: 100px;
+			background-color: #49D848 ;
+		}
+	</style>
+</head>
+<body>
+	<p id="a" class="text">0</p>
+	<div>
+		<input type="button" value="+" onclick="plus()">
+	</div>
+	<script> 
+		function plus()
+		{
+            var textBox = document.getElementById("a").innerHTML;
+            ++textBox;
+            console.log(textBox)
+            document.getElementById("a").innerHTML=textBox
+        }    
+  </script>
+</body>
+</html>
